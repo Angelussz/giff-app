@@ -12,6 +12,8 @@ export const useFetchGifs = (category) => {
   useEffect(() => {
     getImages()
   }, []);
+  // console.log(images)
+  // console.log(isLoading)
   return {
     images,
     isLoading
