@@ -10,6 +10,7 @@ export const AddCategory = ({onNewCategory}) => {
         // console.log(inputValue);
         if(inputValue.trim().length <= 1)return;
         onNewCategory(inputValue.trim())
+        setInputValue("")
     }
     return (
     <form onSubmit={onSubmit}>
